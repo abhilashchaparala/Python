@@ -1,3 +1,1 @@
-# Function for finding LCM
-
-def LCM():
+# Function for findin
