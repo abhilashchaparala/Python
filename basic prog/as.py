@@ -1,15 +1,14 @@
-# Function to sort Python Dictionaries by Key
-
-def sort_dictionaries(dictionary):
+# function, that replaces all vowels in a string with a specified vowel.
+def replace_vowels(string, vowel):
     """
-    Sorts a dictionary by its keys.
+    Replace all vowels in a string with a specified vowel.
     """
-    return sorted(dictionary.items(), key=lambda x: x[0])
-# Function to sort Python Dictionaries by value
-
-def sort_dictionaries_by_value(dictionary):
-    """
-    Sorts a dictionary by its values.
-    """
-    return sorted(dictionary.items(), key=lambda x: x[1])
-# Function to sort Python Dictionaries by Key and Value
+    vowels = "aeiouAEIOU"
+    new_string = ""
+    for i in string:
+        if i in vowels:
+            new_string += vowel
+        else:
+            new_string += i
+    return new_string
+print(replace_vowels("apples and bananas", "u"))
